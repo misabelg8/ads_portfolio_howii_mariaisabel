@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main_header">
+        <div class="line"></div>
+        <div id="header">
+            <span>Bel</span>
+        </div>
+        <div id="social_buttons">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://www.facebook.com/mariaisabel.grando" target="_blank">facebook</a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/mariaisabelgrando/" target="_blank">instagram</a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/channel/UCdTtly0v_QWCbtrRl2Es33g" target="_blank">youtube</a>
+                    </td>
+                    <td> 
+                        <p class="text" onclick="showText()">quem sou eu</p> 
+                    </td> 
+                    <td> 
+                        <p class="text2" onclick="showText2()">contato</p> 
+                    </td> 
+                
+                </tr>
+            </table>
+        </div>
+
+        <p hidden id="text">
+            <br> Maria Isabel Grando </br>
+            <br> 26 anos </br>
+            
+            <br>   Ex-advogada, discípula da CNV, apaixonada pela música e pela vida. </br>
+            <br>   Toco violão, piano e canto. Iniciei cantando em bares, ex-integrante da banda Foras da Lei, Videira/SC (formaturas e casamentos). </br>
+            <br>   Hoje tenho um duo para acústicos com meu namorado, a Kempbel.</br>
+            <br> </br>
+        </p>
+        
+            <div hidden id="text2">
+                <br> Basta clicar no ícone para entrar em contato comigo :) </br>
+            <a href="https://api.whatsapp.com/send?phone=5549999590206" target="_blank"><img  class="whatsapp" src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" width="40px"/></a>
+            </div>
+
+
+        <div id="main">
+            <table id="content">
+                <tr>
+                    <td class="videos ">
+                        <table>
+                            <tr>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RQGhzCkxAJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </tr><br>
+                            <tr>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZpORJwN3aAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <script>
+        function showText() {
+            txt = document.getElementById('text')
+            if (txt.hasAttribute('hidden')) {
+                txt.removeAttribute('hidden')
+            } else {
+                txt.setAttribute('hidden', true)
+            }
+        }
+
+        function showText2() {
+            txt = document.getElementById('text2')
+            if (txt.hasAttribute('hidden')) {
+                txt.removeAttribute('hidden')
+            } else {
+                txt.setAttribute('hidden', true)
+            }
+        }
+    </script>
+
+</body>
+
+</html>
